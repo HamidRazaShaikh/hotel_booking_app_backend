@@ -1,23 +1,23 @@
-require('dotenv').config();
-const connectDB = require('./db/connection');
-const RoomSchema = require('./models/RoomSchema');
-const roomJsonData = require('./data.json');
+// require('dotenv').config();
+// const connectDB = require('./db/connection');
+// const RoomSchema = require('./models/RoomSchema');
+// const roomJsonData = require('./data.json');
 
 
-const start =async()=>{
+// const start =async()=>{
 
-    try{
+//     try{
 
-        await connectDB(process.env.MONGODB_URI);
-        await RoomSchema.create(roomJsonData)
-        console.log('success');
+//         await connectDB(process.env.MONGODB_URI);
+//         await RoomSchema.create(roomJsonData)
+//         console.log('success');
 
-    }
-    catch(error){
+//     }
+//     catch(error){
 
-        console.log(error);
-    }
-}
+//         console.log(error);
+//     }
+// }
 
 
-start()
+// start()
