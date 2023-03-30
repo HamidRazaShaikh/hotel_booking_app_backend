@@ -11,10 +11,10 @@ const stripe = require("stripe")(
   "sk_test_51Mcbc4B6T4EqkNJLsFvefKGGELLJZEZlBfVWydcfe3azTYilg61BW0Z9KP5UMhrMc0ZduQIYiZiAbVjhm94urI6p00bdUvPtU0"
 ); // <-- change the key here
 
-const rooms_routes = require("./routes/rooms");
-const users_routes = require("./routes/users");
-const bookings_routes = require("./routes/bookings");
-const connectDB = require("./db/connection");
+const rooms_routes = require("../routes/rooms");
+const users_routes = require("../routes/users");
+const bookings_routes = require("../routes/bookings");
+const connectDB = require("../db/connection");
 const PORT = process.env.PORT || 4000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
