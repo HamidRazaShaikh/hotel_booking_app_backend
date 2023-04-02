@@ -65,7 +65,7 @@ const editBooking = async (req, res) => {
       return res.status(400).json({ success: false });
     }
 
-    res.status(200).json({ success: true, data: item });
+    res.status(200).json({ success: true, edited : item });
   } catch (error) {
     res.status(400).json({ success: false });
   }
